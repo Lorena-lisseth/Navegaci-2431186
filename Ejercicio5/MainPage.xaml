@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio5.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="mapa.jpg" 
+                HeightRequest="200"
+                HorizontalOptions="Center"/>
+            <Label Text="Práctica 15" TextColor="Black" FontFamily="Bernard MT Condensed" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title"/>
+
+
+            <Image
+               Source="cat.jpg" 
+                HeightRequest="230"
+                HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Cambio"
+                Text="App Cambio"
+                Clicked="Cambio_Clicked"/>
+
+            <Image
+               Source="supsup.png" 
+                HeightRequest="230"
+                HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Superficie"
+                Text="App Superficie"
+                Clicked="Superficie_Clicked"/>
+            
+            <Image
+               Source="dindon.png"
+
+                HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Dinosaurio"
+                Text="App Dinosaurio"
+                Clicked="Dinosaurio_Clicked"/>
+
+            <Image
+               Source="lafa.png" 
+                HeightRequest="230"
+                HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Gasolinera"
+                Text="App Gasolinera"
+                Clicked="Gasolinera_Clicked"/>
+
+            <Image
+               Source="rex.png" 
+                HeightRequest="230"
+                HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Acerca"
+                Text="Acerca de Nosotros"
+                Clicked="Acerca_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

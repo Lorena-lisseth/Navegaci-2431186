@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio5.Cambio"
+             Title="Cambio">
+    <VerticalStackLayout
+       BackgroundColor="MistyRose"
+        Spacing="20"
+        Padding="20,0">
+        <Image
+                Source="vuel.png" 
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+        <Label Text="Ingrese el costo del articulo" TextColor="DarkViolet"/>
+        <Entry x:Name="Cost" Placeholder="Costo del articulo" TextColor="Black"/>
+
+        <Label Text="Ingrese la cantidad de dinero" TextColor="DarkViolet"/>
+        <Entry x:Name="Cant" Placeholder="Cantidad de dinero" TextColor="Black"/>
+
+        <Button
+                x:Name="vuvu"
+                Text="Ver resultado"
+                Clicked="vuvu_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="LightGreen"
+                BorderWidth="2"
+                BorderColor="Green"
+                TextColor="Black"/>
+
+        <Label Text="El cambio del cliente es:" TextColor="DarkViolet"/>
+        <Entry x:Name="Vuelto" Placeholder="Cambio" TextColor="Black" IsEnabled="False"/>
+
+    </VerticalStackLayout>
+</ContentPage>
